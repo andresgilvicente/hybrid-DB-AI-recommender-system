@@ -35,7 +35,7 @@ Unlike traditional single-database systems, this project integrates **MySQL** (f
 
 ## 📂 Repository Structure
 
-The project follows a modular structure. Source code is located in `src/`, while datasets are stored in `data/`.
+The project follows a modular structure. Source code is located in `src/`, while datasets are stored in `src/data/`.
 
 ```text
 ├── 📂 assets/                       # Project visuals

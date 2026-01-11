@@ -38,24 +38,25 @@ Unlike traditional single-database systems, this project integrates **MySQL** (f
 The project follows a modular structure. Source code is located in `src/`, while datasets are stored in `data/`.
 
 ```text
-├── 📂 docs/                     # Official Documentation & Reports
+├── 📂 assets/                       # Project visuals
+│   └── 🖼️ banner_readme.png         # Repository Banner
+|
+├── 📂 docs/                         # Official Documentation & Reports
+│   ├── 📄 Project_Final_Poster.pdf  # Final Project Poster
+│   └── 📄 Project_Final_Report.pdf  # Final Project Report
+|
+├── 📂 src/                          # Source Code
+│   ├── 📄 configuracion.py          # Database Credentials & File Paths
+│   ├── 📄 load_data.py              # ETL Pipeline (JSON -> MySQL/MongoDB)
+│   ├── 📄 inserta_dataset.py        # Incremental Data Loader (Scalability)
+│   ├── 📄 menu_visualizacion.py     # Interactive Analytics Dashboard
+│   ├── 📄 neo4JProyecto.py          # Graph Modeling & Neo4j Integration
+│   |── 📄 machine_learning.py       # AI Recommender System (User Similarity)
+│   └── 📂 data/                     # Raw JSON Datasets (Ignored by Git)
 │
-├── 📂 src/                      # Source Code
-│   ├── 📄 configuracion.py      # Database Credentials & File Paths
-│   ├── 📄 load_data.py          # ETL Pipeline (JSON -> MySQL/MongoDB)
-│   ├── 📄 inserta_dataset.py    # Incremental Data Loader (Scalability)
-│   ├── 📄 menu_visualizacion.py # Interactive Analytics Dashboard
-│   ├── 📄 neo4JProyecto.py      # Graph Modeling & Neo4j Integration
-│   └── 📄 machine_learning.py   # AI Recommender System (User Similarity)
-│
-├── 📂 data/                     # Raw JSON Datasets (Ignored by Git)
-│
-├── 📂 assets/                   # Project visuals
-│   └── 🖼️ banner_readme.png     # Repository Banner
-│
-├── 📄 .gitignore                # Git configuration
-├── 📄 README.md                 # Project Documentation
-└── 📄 requirements.txt          # Python dependencies
+├── 📄 .gitignore                    # Git configuration
+├── 📄 README.md                     # Project Documentation
+└── 📄 requirements.txt              # Python dependencies
 
 ```
 
@@ -72,8 +73,10 @@ To ensure a clean execution environment, using a **Virtual Environment** is high
 python -m venv venv
 
 # Activate Environment
+
 # Windows:
 venv\Scripts\activate
+
 # Linux/Mac:
 source venv/bin/activate
 

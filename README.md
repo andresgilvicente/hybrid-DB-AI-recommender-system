@@ -140,7 +140,7 @@ python src/inserta_dataset.py
 ### 5️⃣ AI Recommender System (Optional)
 
 **`src/machine_learning.py`**
-Executes the Recommendation Engine. It calculates cosine similarity between users to suggest products that similar users have rated highly.
+Executes the Recommendation Engine. It calculates similarity between users to suggest products that similar users have rated highly.
 
 
 ```bash

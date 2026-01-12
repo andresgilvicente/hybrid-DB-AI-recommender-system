@@ -4,21 +4,21 @@
   <h1>🧠 Hybrid DB & AI Recommender System</h1>
   <p><strong>Multi-Database Persistence Layer with Machine Learning for E-commerce Insights</strong></p>
 
-  <p>
+<p>
     <a href="https://www.python.org/">
       <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
     </a>
     <a href="https://www.mysql.com/">
-      <img src="https://img.shields.io/badge/MySQL-Relational_DB-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+      <img src="https://img.shields.io/badge/MySQL-Relational_DB-E4572E?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
     </a>
     <a href="https://www.mongodb.com/">
-      <img src="https://img.shields.io/badge/MongoDB-Document_DB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+      <img src="https://img.shields.io/badge/MongoDB-Document_DB-00ED64?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
     </a>
     <a href="https://neo4j.com/">
-      <img src="https://img.shields.io/badge/Neo4j-Graph_DB-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j">
+      <img src="https://img.shields.io/badge/Neo4j-Graph_DB-00B2FF?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j">
     </a>
     <a href="https://scikit-learn.org/">
-      <img src="https://img.shields.io/badge/AI-Recommender-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="AI Recommender">
+      <img src="https://img.shields.io/badge/AI-Recommender-FFB11B?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="AI Recommender">
     </a>
   </p>
 </div>
@@ -35,27 +35,28 @@ Unlike traditional single-database systems, this project integrates **MySQL** (f
 
 ## 📂 Repository Structure
 
-The project follows a modular structure. Source code is located in `src/`, while datasets are stored in `data/`.
+The project follows a modular structure. Source code is located in `src/`, while datasets are stored in `src/data/`.
 
 ```text
-├── 📂 docs/                     # Official Documentation & Reports
+├── 📂 assets/                       # Project visuals
+│   └── 🖼️ banner_readme.png         # Repository Banner
+|
+├── 📂 docs/                         # Official Documentation & Reports
+│   ├── 📄 Project_Final_Poster.pdf  # Final Project Poster
+│   └── 📄 Project_Final_Report.pdf  # Final Project Report
+|
+├── 📂 src/                          # Source Code
+│   ├── 📄 configuracion.py          # Database Credentials & File Paths
+│   ├── 📄 load_data.py              # ETL Pipeline (JSON -> MySQL/MongoDB)
+│   ├── 📄 inserta_dataset.py        # Incremental Data Loader (Scalability)
+│   ├── 📄 menu_visualizacion.py     # Interactive Analytics Dashboard
+│   ├── 📄 neo4JProyecto.py          # Graph Modeling & Neo4j Integration
+│   |── 📄 machine_learning.py       # AI Recommender System (User Similarity)
+│   └── 📂 data/                     # Raw JSON Datasets (Ignored by Git)
 │
-├── 📂 src/                      # Source Code
-│   ├── 📄 configuracion.py      # Database Credentials & File Paths
-│   ├── 📄 load_data.py          # ETL Pipeline (JSON -> MySQL/MongoDB)
-│   ├── 📄 inserta_dataset.py    # Incremental Data Loader (Scalability)
-│   ├── 📄 menu_visualizacion.py # Interactive Analytics Dashboard
-│   ├── 📄 neo4JProyecto.py      # Graph Modeling & Neo4j Integration
-│   └── 📄 machine_learning.py   # AI Recommender System (User Similarity)
-│
-├── 📂 data/                     # Raw JSON Datasets (Ignored by Git)
-│
-├── 📂 assets/                   # Project visuals
-│   └── 🖼️ banner_readme.png     # Repository Banner
-│
-├── 📄 .gitignore                # Git configuration
-├── 📄 README.md                 # Project Documentation
-└── 📄 requirements.txt          # Python dependencies
+├── 📄 .gitignore                    # Git configuration
+├── 📄 README.md                     # Project Documentation
+└── 📄 requirements.txt              # Python dependencies
 
 ```
 
@@ -72,8 +73,10 @@ To ensure a clean execution environment, using a **Virtual Environment** is high
 python -m venv venv
 
 # Activate Environment
+
 # Windows:
 venv\Scripts\activate
+
 # Linux/Mac:
 source venv/bin/activate
 
@@ -137,7 +140,7 @@ python src/inserta_dataset.py
 ### 5️⃣ AI Recommender System (Optional)
 
 **`src/machine_learning.py`**
-Executes the Recommendation Engine. It calculates cosine similarity between users to suggest products that similar users have rated highly.
+Executes the Recommendation Engine. It calculates similarity between users to suggest products that similar users have rated highly.
 
 
 ```bash

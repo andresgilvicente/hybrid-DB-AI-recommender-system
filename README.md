@@ -4,6 +4,8 @@
   <h1>🧠 Hybrid DB & AI Recommender System</h1>
   <p><strong>Multi-Database Persistence Layer with Machine Learning for E-commerce Insights</strong></p>
 
+  <p><strong>Development period:</strong> January–May 2024</p>
+
 <p>
     <a href="https://www.python.org/">
       <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
@@ -152,5 +154,3 @@ python src/machine_learning.py
 
 * **Jorge Carnicero Príncipe**
 * **Andrés Gil Vicente**
-
-*Completion Date: April 22, 2024*
